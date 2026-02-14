@@ -1,1 +1,27 @@
-# test-of-basic-GitHub-functions
+## test-of-basic-GitHub-functions
+ pwd
+/Users/donatusschmid
+❯ git clone https://github.com/donatusschmid/hello-github
+Cloning into 'hello-github'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+❯ cd hello-github
+❯ vi hello.py
+❯ python3 hello.py
+Hello from GitHub!
+❯ git add hello.py
+❯ git commit -m "Initial hello.py"
+[main c36f478] Initial hello.py
+ 1 file changed, 6 insertions(+)
+ create mode 100644 hello.py
+❯ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/donatusschmid/hello-github
+   1391f27..c36f478  main -> main
