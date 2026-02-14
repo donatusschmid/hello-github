@@ -1,4 +1,5 @@
 ## test-of-basic-GitHub-functions
+```
  pwd
 /Users/donatusschmid
 ❯ git clone https://github.com/donatusschmid/hello-github
@@ -25,3 +26,21 @@ Writing objects: 100% (3/3), 367 bytes | 367.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/donatusschmid/hello-github
    1391f27..c36f478  main -> main
+4935  git checkout -b feature-update-hello
+ 4936  vi hello.py
+ 4937  python3 hello.py
+ 4938  git add hello.py
+ 4939  git commit -m "Update hello function"
+ 4940  git checkout main
+ 4941  git merge feature-update-hello
+ 4942  git push origin main
+ # This is necessary if changes where made in the browser, like changing readme.md
+ 4946  git pull origin main --allow-unrelated-histories
+ 4947  git push origin main
+ 4948  python3 hello.py
+
+
+
+```
+
+
